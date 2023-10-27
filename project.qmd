@@ -1,0 +1,12 @@
+---
+title: "Our Course Project"
+sidebar: false 
+---
+
+I'm honored to be a member of the \[group name\] project team.
+
+Below, you'll find a brief summary of our project. To access a detailed project description, please go to [https://\[your-project-url\]](#0){.uri}.
+
+**Summary**
+
+\[provide a biref summary of your project\]

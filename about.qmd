@@ -1,0 +1,30 @@
+---
+title: "About Me"
+sidebar: false 
+---
+
+# Education
+
+-   B.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
+
+# Work Experience
+
+## Employements
+
+1.  Firm xxx, position xx, year xxx
+
+2.  Firm yyy, position yyy, year yyy
+
+## Internships
+
+1.  Firm aaa, position xx, year xxx
+
+2.  Firm bbb, position yyy, year yyy
+
+# Projects
+
+# Competencies
+
+R, Quarto, Git, Python
+
+# Hobbies

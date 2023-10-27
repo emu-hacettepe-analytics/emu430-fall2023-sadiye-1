@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Analytics Lab",
+    "section": "",
+    "text": "Hello! My name is xxx xxxx.\nThis is my personal webpage.\nPlease stay tuned to follow my works on data analytics, blog posts, and more.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "B.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing."
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "My Blog",
+    "section": "",
+    "text": "This page is under construction.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "Our Course Project",
+    "section": "",
+    "text": "I’m honored to be a member of the [group name] project team.\nBelow, you’ll find a brief summary of our project. To access a detailed project description, please go to https://[your-project-url].\nSummary\n[provide a biref summary of your project]\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "My Assignments",
+    "section": "",
+    "text": "On this page, I showcase the assignment I conducted for the [term and year, e.g. Fall 2023] EMU 430 Data Analytics course.\nPlease use left menu to navigate through my assignments.\nThe most recent update to this page was made on October 25, 2023\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assignments.html#part-a",
+    "href": "assignments.html#part-a",
+    "title": "My Assignments",
+    "section": "part a)",
+    "text": "part a)"
+  },
+  {
+    "objectID": "assignments.html#part-b",
+    "href": "assignments.html#part-b",
+    "title": "My Assignments",
+    "section": "part b)",
+    "text": "part b)"
+  },
+  {
+    "objectID": "assignments.html#a",
+    "href": "assignments.html#a",
+    "title": "My Assignments",
+    "section": "(a)",
+    "text": "(a)"
+  },
+  {
+    "objectID": "assignments.html#b",
+    "href": "assignments.html#b",
+    "title": "My Assignments",
+    "section": "(b)",
+    "text": "(b)"
+  },
+  {
+    "objectID": "about.html#employements",
+    "href": "about.html#employements",
+    "title": "About Me",
+    "section": "Employements",
+    "text": "Employements\n\nFirm xxx, position xx, year xxx\nFirm yyy, position yyy, year yyy"
+  },
+  {
+    "objectID": "about.html#internships",
+    "href": "about.html#internships",
+    "title": "About Me",
+    "section": "Internships",
+    "text": "Internships\n\nFirm aaa, position xx, year xxx\nFirm bbb, position yyy, year yyy"
+  },
+  {
+    "objectID": "assignment-1.html",
+    "href": "assignment-1.html",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "1 + 1\n\n[1] 2\n\n\nMy first assignment has two parts."
+  },
+  {
+    "objectID": "assignment-1.html#a",
+    "href": "assignment-1.html#a",
+    "title": "Assignment 1",
+    "section": "(a)",
+    "text": "(a)"
+  },
+  {
+    "objectID": "assignment-1.html#b",
+    "href": "assignment-1.html#b",
+    "title": "Assignment 1",
+    "section": "(b)",
+    "text": "(b)"
+  },
+  {
+    "objectID": "assignments/assignment-2.html",
+    "href": "assignments/assignment-2.html",
+    "title": "Assignment 2",
+    "section": "",
+    "text": "Assignment 2\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "assignments/assignment-1.html",
+    "href": "assignments/assignment-1.html",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "1 + 1\n\n[1] 2\n\n\nMy first assignment has two parts."
+  }
+]

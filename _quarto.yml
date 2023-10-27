@@ -1,0 +1,55 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "[Student/Group Full Name]'s Analytics Lab"
+  navbar:
+    search: true
+    left:
+      - text: Home
+        href: index.qmd
+      - text: About Me
+        href: about.qmd
+      - text: My Posts
+        href: posts.qmd
+      - text: "EMU430 Coursework"
+        menu:
+          - text: Assignments
+            href: assignments.qmd
+          - text: Project
+            href: project.qmd
+            
+    tools:
+      - icon: github
+        href: https://twitter.com
+      - icon: twitter
+        href: https://twitter.com
+      - icon: linkedin
+        href: https://linkedin.com
+
+  sidebar:
+    - title: "Assignments"
+      style: "docked"
+      search: true
+      contents:
+        - assignments.qmd
+        - assignments/assignment-1.qmd
+        - assignments/assignment-2.qmd  
+  page-navigation: true
+  back-to-top-navigation: true
+  page-footer:
+    center: "Hacettepe IE - EMU 430 - Fall 2023" 
+    border: true
+format:
+  html:
+    toc: true
+    toc-location: left
+    theme: 
+      light: pulse 
+      dark: superhero
+    css: styles.css
+
+
+editor: visual
+
