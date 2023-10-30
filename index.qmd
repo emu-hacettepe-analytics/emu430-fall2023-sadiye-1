@@ -7,5 +7,6 @@ Hello! My name is Şadiye Öztürk.
 
 This is my personal webpage.
 
-Please stay tuned to follow my works on data analytics, blog posts, and more.
+This is my first webpage design experiment.
 
+Please stay tuned to follow my works on data analytics, blog posts, and more.
