@@ -5,9 +5,9 @@ sidebar: false
 
 # Education {style="color: purple"}
 
--   ::: {style="color: gray"}
-    | B.S., [Industrial Engineering, Hacettepe University](https://ie.hacettepe.edu.tr/index.php?lang=en), Turkey, 2019 - ongoing.
-    :::
+::: {.classname style="color: black"}
+B.S., [Industrial Engineering, Hacettepe University](https://ie.hacettepe.edu.tr/index.php?lang=en), Turkey, 2019 - ongoing.
+:::
 
 # Work Experience {style="color: purple"}
 
