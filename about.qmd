@@ -3,7 +3,7 @@ title: "About Me"
 sidebar: false 
 ---
 
-# Education {style="color: purple"}
+# Education
 
 ::: {.classname style="color: black; background-color: lightblue"}
 B.S., [Industrial Engineering, Hacettepe University](https://ie.hacettepe.edu.tr/index.php?lang=en), Turkey, 2019 - ongoing.
