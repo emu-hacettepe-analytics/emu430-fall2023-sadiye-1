@@ -46,8 +46,8 @@ format:
     toc: true
     toc-location: left
     theme: 
-      light: flatly
-      dark: darkly
+      light: white
+      dark: default
     css: styles.css
 
 
