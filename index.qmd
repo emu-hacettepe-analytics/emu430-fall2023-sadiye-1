@@ -11,6 +11,4 @@ Please stay tuned to follow my works on data analytics, blog posts, and more.
 
 ![](images/whale27.webp){fig-align="left" width="48"}
 
----
-theme: cosmo
----
+

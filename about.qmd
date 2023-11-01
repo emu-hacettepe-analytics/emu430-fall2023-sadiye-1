@@ -3,28 +3,47 @@ title: "About Me"
 sidebar: false 
 ---
 
-# Education
+# Education {style="color: purple"}
 
--   B.S., Industrial Engineering, Hacettepe University, Turkey, 2019 - ongoing.
+-   B.S., [Industrial Engineering, Hacettepe University](https://ie.hacettepe.edu.tr/index.php?lang=en), Turkey, 2019 - ongoing.
 
-# Work Experience
+# Work Experience {style="color: purple"}
 
-## Employements
+1.  [Türk Telekomünikasyon A.Ş.](https://www.turktelekombys.com.tr/sayfa/genel_mudurluk), IT Business Analyst, 08/01/2023-ongoing.
 
-1.  Firm xxx, position xx, year xxx
+# Internships {style="color: purple"}
 
-2.  Firm yyy, position yyy, year yyy
+1.  [GEMAK Food Industrial Machinery and Inc.](https://www.gemak.com.tr/), Summer Intern, 2022
 
-## Internships
+2.  [Turkish Aerospace Industries Inc.](https://www.tusas.com/), Summer Intern, 2023
 
-1.  Firm aaa, position xx, year xxx
+# Projects {style="color: purple"}
 
-2.  Firm bbb, position yyy, year yyy
+1.  [NÜVE Industrial Materials Manufacturing and Trade Inc., Graduation Project](https://nuve.com.tr/tr), 2023- ongoing
 
-# Projects
+# Skills {style="color: purple"}
 
-# Competencies
+| Tools & Technologies | Competency Level | Certification                                                                                       |
+|----------------------|------------------|-----------------------------------------------------------------------------------------------------|
+| SQL                  | Advanced         | [Udemy](https://udemy-certificate.s3.amazonaws.com/pdf/UC-8bb03910-ec6d-4fcd-bfde-34274c278ace.pdf) |
+| Excel                | Advanced         | [Udemy](https://udemy-certificate.s3.amazonaws.com/pdf/UC-031e06c7-577c-455e-afb6-e2be91d34510.pdf) |
+| Expertfit            | Intermediate     |                                                                                                     |
+| Minitab              | Intermediate     |                                                                                                     |
+| Python               | Intermediate     |                                                                                                     |
+| Solidworks           | Intermediate     |                                                                                                     |
+| R                    | Beginner         | [Coursera](https://www.coursera.org/account/accomplishments/certificate/NGH84Q99G63G)               |
+| Matlab               | Intermediate     |                                                                                                     |
+| MS Office            | Advanced         |                                                                                                     |
 
-R, Quarto, Git, Python
+# Seminars & Certification {style="color: purple"}
 
-# Hobbies
+-   [Google Data Analytics Professional Certificate](https://www.coursera.org/account/accomplishments/professional-cert/WALT24WRG5FM?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof), 2023
+
+-   [Google Technical Support Fundamentals](https://www.coursera.org/account/accomplishments/verify/N8Y4LNTWTS6X?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course), 2023
+
+-   [Sabancı Womentum Education Program](https://verified.sertifier.com/en/verify/18650250736594/?ref=email), 2023
+
+# Hobbies {style="color: purple"}
+
+-   Hiking
+-   Yoga
