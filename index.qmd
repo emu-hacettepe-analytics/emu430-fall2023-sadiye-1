@@ -5,7 +5,6 @@ sidebar: false
 
 Hello! My name is Şadiye Öztürk.
 
-
 Also my first webpage design experiment.
 
 Please stay tuned to follow my works on data analytics, blog posts, and more.
