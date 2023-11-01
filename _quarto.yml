@@ -46,8 +46,8 @@ format:
     toc: true
     toc-location: left
     theme: 
-      light: pulse
-      dark: pulse
+      light: minty
+      dark: minty
     css: styles.css
 
 
