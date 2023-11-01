@@ -47,7 +47,7 @@ format:
     toc-location: left
     theme: 
       light: quartz
-      dark: lux
+      dark: lux 
     css: styles.css
 
 
