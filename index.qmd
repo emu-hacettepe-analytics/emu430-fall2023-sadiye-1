@@ -1,6 +1,7 @@
 ---
 title: "Welcome to My Analytics Lab"
 sidebar: false 
+![Elephant](elephant.png)
 ---
 
 Hello! My name is Şadiye Öztürk.
