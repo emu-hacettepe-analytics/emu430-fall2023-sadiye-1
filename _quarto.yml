@@ -46,8 +46,8 @@ format:
     toc: true
     toc-location: left
     theme: 
-      light: quartz
-      dark: quartz
+      light: pulse
+      dark: pulse
     css: styles.css
 
 
