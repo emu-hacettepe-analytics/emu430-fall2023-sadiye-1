@@ -46,7 +46,7 @@ format:
     toc: true
     toc-location: left
     theme: 
-      light: minty
+      light: [minty, theme-light.scss]
       dark: minty
     css: styles.css
 
