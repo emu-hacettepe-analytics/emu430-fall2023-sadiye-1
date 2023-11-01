@@ -1,7 +1,6 @@
 ---
 title: "Welcome to My Analytics Lab"
 sidebar: false 
-![Elephant](elephant.png)
 ---
 
 Hello! My name is Şadiye Öztürk.
@@ -11,3 +10,5 @@ This is my personal webpage.
 This is my first webpage design experiment.
 
 Please stay tuned to follow my works on data analytics, blog posts, and more.
+
+![Elephant](elephant.png)
