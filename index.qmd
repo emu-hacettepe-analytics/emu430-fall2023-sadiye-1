@@ -3,12 +3,11 @@ title: "Welcome to My Analytics Lab"
 sidebar: false 
 ---
 
-![](images/whale27.webp){fig-align="left" width="48"}
+Hello! My name is Şadiye Öztürk.
 
-Hello! My name is Şadiye Öztürk. <!--#  -->
-
-This is my personal webpage.
 
 Also my first webpage design experiment.
 
 Please stay tuned to follow my works on data analytics, blog posts, and more.
+
+![](images/whale27.webp){fig-align="left" width="48"}
