@@ -26,7 +26,7 @@ B.S., [Industrial Engineering, Hacettepe University](https://ie.hacettepe.edu.tr
 # Skills {style="color: purple"}
 
 | Tools & Technologies | Competency Level | Certification                                                                                       |
-|----------------------------|------------------------|--------------------|
+|----------------------|------------------|-----------------------------------------------------------------------------------------------------|
 | SQL                  | Advanced         | [Udemy](https://udemy-certificate.s3.amazonaws.com/pdf/UC-8bb03910-ec6d-4fcd-bfde-34274c278ace.pdf) |
 | Excel                | Advanced         | [Udemy](https://udemy-certificate.s3.amazonaws.com/pdf/UC-031e06c7-577c-455e-afb6-e2be91d34510.pdf) |
 | Expertfit            | Intermediate     |                                                                                                     |
@@ -50,4 +50,4 @@ B.S., [Industrial Engineering, Hacettepe University](https://ie.hacettepe.edu.tr
 -   Hiking
 -   Yoga
 
-# CV {style="color:black"}
+# CV {style="color:black"} file:///C:/Users/sadiy/OneDrive/Masa%C3%BCst%C3%BC/Documents/CV,%C4%B0mza,Vesikal%C4%B1k/%C5%9Eadiye%20%C3%96zt%C3%BCrk%20CV.pdf
