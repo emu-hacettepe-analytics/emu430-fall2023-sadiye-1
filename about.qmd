@@ -2,31 +2,31 @@
 title: "About Me"
 sidebar: false 
 ---
+<a href="file:///C:/Users/sadiy/OneDrive/Masa%C3%BCst%C3%BC/Documents/CV,%C4%B0mza,Vesikal%C4%B1k/%C5%9Eadiye%20%C3%96zt%C3%BCrk%20CV.pdf">Download Brochure</a>
+
 
 # Education
 
-::: classname
 B.S., [Industrial Engineering, Hacettepe University](https://ie.hacettepe.edu.tr/index.php?lang=en), Turkey, 2019 - ongoing.
-:::
 
-# Work Experience {style="color: purple"}
+# Work Experience
 
 1.  [Türk Telekomünikasyon A.Ş.](https://www.turktelekombys.com.tr/sayfa/genel_mudurluk), IT Business Analyst, 08/01/2023-ongoing.
 
-# Internships {style="color: purple"}
+# Internships
 
 1.  [GEMAK Food Industrial Machinery and Inc.](https://www.gemak.com.tr/), Summer Intern, 2022
 
 2.  [Turkish Aerospace Industries Inc.](https://www.tusas.com/), Summer Intern, 2023
 
-# Projects {style="color: purple"}
+# Projects
 
 1.  [NÜVE Industrial Materials Manufacturing and Trade Inc., Graduation Project](https://nuve.com.tr/tr), 2023- ongoing
 
-# Skills {style="color: purple"}
+# Skills
 
 | Tools & Technologies | Competency Level | Certification                                                                                       |
-|----------------------|------------------|-----------------------------------------------------------------------------------------------------|
+|----------------------------|------------------------|--------------------|
 | SQL                  | Advanced         | [Udemy](https://udemy-certificate.s3.amazonaws.com/pdf/UC-8bb03910-ec6d-4fcd-bfde-34274c278ace.pdf) |
 | Excel                | Advanced         | [Udemy](https://udemy-certificate.s3.amazonaws.com/pdf/UC-031e06c7-577c-455e-afb6-e2be91d34510.pdf) |
 | Expertfit            | Intermediate     |                                                                                                     |
@@ -37,7 +37,7 @@ B.S., [Industrial Engineering, Hacettepe University](https://ie.hacettepe.edu.tr
 | Matlab               | Intermediate     |                                                                                                     |
 | MS Office            | Advanced         |                                                                                                     |
 
-# Seminars & Certification {style="color: purple"}
+# Seminars & Certification
 
 -   [Google Data Analytics Professional Certificate](https://www.coursera.org/account/accomplishments/professional-cert/WALT24WRG5FM?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof), 2023
 
@@ -45,7 +45,7 @@ B.S., [Industrial Engineering, Hacettepe University](https://ie.hacettepe.edu.tr
 
 -   [Sabancı Womentum Education Program](https://verified.sertifier.com/en/verify/18650250736594/?ref=email), 2023
 
-# Hobbies {style="color: purple"}
+# Hobbies
 
 -   Hiking
 -   Yoga
