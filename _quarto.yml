@@ -10,7 +10,7 @@ website:
       - text: Home
         href: index.qmd
       - text: About Me
-        href: about.qmd "file:///C:/Users/sadiy/OneDrive/Masa%C3%BCst%C3%BC/Documents/CV,%C4%B0mza,Vesikal%C4%B1k/%C5%9Eadiye%20%C3%96zt%C3%BCrk%20CV.pdf" download>here</a>.</p>
+        href: about.qmd 
       - text: My Posts
         href: posts.qmd
       - text: "EMU430 Coursework"
@@ -46,8 +46,8 @@ format:
     toc: true
     toc-location: left
     theme: 
-      light: [minty, theme-light.scss]
-      dark: minty
+      light: minty
+      dark: lux
     css: styles.css
 
 
