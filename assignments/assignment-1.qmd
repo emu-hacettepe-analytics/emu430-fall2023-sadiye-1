@@ -63,9 +63,10 @@ My first assignment has three parts.
 
     We have to use for loop for calculate the square of the elements on the list.
 
-    ```{{python}}
+    ```{python}
     y = [1,2,3,4,5]
     sq = [y**2 for y in y] 
+    print(sq)
 
     ```
 
@@ -88,6 +89,7 @@ My first assignment has three parts.
     ```{python}
     t = [1,2,3,4,5,6]
     new_list = [x + 1 if x < 4 else 0 for x in t]
+    print(new_list)
     ```
 
 ## (c)
