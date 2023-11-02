@@ -25,7 +25,7 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "Download CV (English)\n\nEducation\nB.S., Industrial Engineering, Hacettepe University, Turkey, 2019 - ongoing.\n\n\nWork Experience\n\nTürk Telekomünikasyon A.Ş., IT Business Analyst, 08/01/2023-ongoing.\n\n\n\nInternships\n\nGEMAK Food Industrial Machinery and Inc., Summer Intern, 2022\nTurkish Aerospace Industries Inc., Summer Intern, 2023\n\n\n\nProjects\n\nNÜVE Industrial Materials Manufacturing and Trade Inc., Graduation Project, 2023- ongoing\n\n\n\nSkills\n\n\n\nTools & Technologies\nCompetency Level\nCertification\n\n\n\n\nSQL\nAdvanced\nUdemy\n\n\nExcel\nAdvanced\nUdemy\n\n\nExpertfit\nIntermediate\n\n\n\nMinitab\nIntermediate\n\n\n\nPython\nIntermediate\n\n\n\nSolidworks\nIntermediate\n\n\n\nR\nBeginner\nCoursera\n\n\nMatlab\nIntermediate\n\n\n\nMS Office\nAdvanced\n\n\n\n\n\n\nSeminars & Certification\n\nGoogle Data Analytics Professional Certificate, 2023\nGoogle Technical Support Fundamentals, 2023\nSabancı Womentum Education Program, 2023\n\n\n\nHobbies\n\nHiking\nYoga\n\n\n\nCV\n\n\n\n\n Back to top"
+    "text": "Download CV (English)\n\nEducation\nB.S., Industrial Engineering, Hacettepe University, Turkey, 2019 - ongoing.\n\n\nWork Experience\n\nTürk Telekomünikasyon A.Ş., IT Business Analyst, 08/01/2023-ongoing.\n\n\n\nInternships\n\nGEMAK Food Industrial Machinery and Inc., Summer Intern, 2022\nTurkish Aerospace Industries Inc., Summer Intern, 2023\n\n\n\nProjects\n\nNÜVE Industrial Materials Manufacturing and Trade Inc., Graduation Project, 2023- ongoing\n\n\n\nSkills\n\n\n\nTools & Technologies\nCompetency Level\nCertification\n\n\n\n\nSQL\nAdvanced\nUdemy\n\n\nExcel\nAdvanced\nUdemy\n\n\nExpertfit\nIntermediate\n\n\n\nMinitab\nIntermediate\n\n\n\nPython\nIntermediate\n\n\n\nSolidworks\nIntermediate\n\n\n\nR\nBeginner\nCoursera\n\n\nMatlab\nIntermediate\n\n\n\nMS Office\nAdvanced\n\n\n\n\n\n\nSeminars & Certification\n\nGoogle Data Analytics Professional Certificate, 2023\nGoogle Technical Support Fundamentals, 2023\nSabancı Womentum Education Program, 2023\n\n\n\nHobbies\n\nHiking\nYoga\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "about.html#employements",
@@ -46,7 +46,7 @@
     "href": "assignments/assignment-1.html",
     "title": "Assignment 1",
     "section": "",
-    "text": "1 + 1\n\n[1] 2\n\n\nMy first assignment has two parts."
+    "text": "My first assignment has three parts."
   },
   {
     "objectID": "assignments.html",
@@ -61,5 +61,26 @@
     "title": "My Blog",
     "section": "",
     "text": "This page is under construction.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assignments/assignment-1.html#a",
+    "href": "assignments/assignment-1.html#a",
+    "title": "Assignment 1",
+    "section": "(a)",
+    "text": "(a)\nSecurely store and share database credentials across projects with Data Connections | Posit Cloud"
+  },
+  {
+    "objectID": "assignments/assignment-1.html#b",
+    "href": "assignments/assignment-1.html#b",
+    "title": "Assignment 1",
+    "section": "(b)",
+    "text": "(b)\n1.Indexing\n\nPython\nIndexing in Python starts from 0.\n\nx=list(range(1,4))\nfirst_element=x[1]\n#output is 2 because first index is 0 we should use x[0] for first element of the list in python.\nprint(first_element)\n\n2\n\n\nR\nIndexing in R starts from 1.\n\nx &lt;- c(1:4)\nfirst_element &lt;- x[1]\nfirst_element #when we try it in python output is going to be 2 because indexing starts from 0.\n\n[1] 1\n\n\n\n2.Style\n\nR\nR use more simple programming language rather then python.\n\ny&lt;-c(1,2,3,4,5)\nsquare&lt;-y^2 #using square root of the defined element give us the square of elements on the list.\nsquare\n\n[1]  1  4  9 16 25\n\n\nPython\n\ny = [1,2,3,4,5]\nsq = [y**2 for y in y] #we have to use for loop for calculate the square of the elements on the list. More complex than R.\n\n\n3.Syntax for Conditional Statements\n\nR\nIfelse applies the condition to each element on the list without for loop.\n\nt &lt;- c(1,2,3,4,5,6)\nifelse(t&lt;4,t+1,0)\n\n[1] 2 3 4 0 0 0\n\n\nPython\nIn python, we need for loop to apply the condition to each element on the list.\n\nt = [1,2,3,4,5,6]\nnew_list = [x + 1 if x &lt; 4 else 0 for x in t]"
+  },
+  {
+    "objectID": "assignments/assignment-1.html#c",
+    "href": "assignments/assignment-1.html#c",
+    "title": "Assignment 1",
+    "section": "(c)",
+    "text": "(c)\n\nlibrary(dslabs)\n\ndata(\"na_example\")\n\nprint(na_example) #print na_example\n\n   [1]  2  1  3  2  1  3  1  4  3  2  2 NA  2  2  1  4 NA  1  1  2  1  2  2  1\n  [25]  2  5 NA  2  2  3  1  2  4  1  1  1  4  5  2  3  4  1  2  4  1  1  2  1\n  [49]  5 NA NA NA  1  1  5  1  3  1 NA  4  4  7  3  2 NA NA  1 NA  4  1  2  2\n  [73]  3  2  1  2  2  4  3  4  2  3  1  3  2  1  1  1  3  1 NA  3  1  2  2  1\n  [97]  2  2  1  1  4  1  1  2  3  3  2  2  3  3  3  4  1  1  1  2 NA  4  3  4\n [121]  3  1  2  1 NA NA NA NA  1  5  1  2  1  3  5  3  2  2 NA NA NA NA  3  5\n [145]  3  1  1  4  2  4  3  3 NA  2  3  2  6 NA  1  1  2  2  1  3  1  1  5 NA\n [169] NA  2  4 NA  2  5  1  4  3  3 NA  4  3  1  4  1  1  3  1  1 NA NA  3  5\n [193]  2  2  2  3  1  2  2  3  2  1 NA  2 NA  1 NA NA  2  1  1 NA  3 NA  1  2\n [217]  2  1  3  2  2  1  1  2  3  1  1  1  4  3  4  2  2  1  4  1 NA  5  1  4\n [241] NA  3 NA NA  1  1  5  2  3  3  2  4 NA  3  2  5 NA  2  3  4  6  2  2  2\n [265] NA  2 NA  2 NA  3  3  2  2  4  3  1  4  2 NA  2  4 NA  6  2  3  1 NA  2\n [289]  2 NA  1  1  3  2  3  3  1 NA  1  4  2  1  1  3  2  1  2  3  1 NA  2  3\n [313]  3  2  1  2  3  5  5  1  2  3  3  1 NA NA  1  2  4 NA  2  1  1  1  3  2\n [337]  1  1  3  4 NA  1  2  1  1  3  3 NA  1  1  3  5  3  2  3  4  1  4  3  1\n [361] NA  2  1  2  2  1  2  2  6  1  2  4  5 NA  3  4  2  1  1  4  2  1  1  1\n [385]  1  2  1  4  4  1  3 NA  3  3 NA  2 NA  1  2  1  1  4  2  1  4  4 NA  1\n [409]  2 NA  3  2  2  2  1  4  3  6  1  2  3  1  3  2  2  2  1  1  3  2  1  1\n [433]  1  3  2  2 NA  4  4  4  1  1 NA  4  3 NA  1  3  1  3  2  4  2  2  2  3\n [457]  2  1  4  3 NA  1  4  3  1  3  2 NA  3 NA  1  3  1  4  1  1  1  2  4  3\n [481]  1  2  2  2  3  2  3  1  1 NA  3  2  1  1  2 NA  2  2  2  3  3  1  1  2\n [505] NA  1  2  1  1  3  3  1  3  1  1  1  1  1  2  5  1  1  2  2  1  1 NA  1\n [529]  4  1  2  4  1  3  2 NA  1  1 NA  2  1  1  4  2  3  3  1  5  3  1  1  2\n [553] NA  1  1  3  1  3  2  4 NA  2  3  2  1  2  1  1  1  2  2  3  1  5  2 NA\n [577]  2 NA  3  2  2  2  1  5  3  2  3  1 NA  3  1  2  2  2  1  2  2  4 NA  6\n [601]  1  2 NA  1  1  2  2  3 NA  3  2  3  3  4  2 NA  2 NA  4 NA  1  1  2  2\n [625]  3  1  1  1  3 NA  2  5 NA  7  1 NA  4  3  3  1 NA  1  1  1  1  3  2  4\n [649]  2  2  3 NA NA  1  4  3  2  2  2  3  2  4  2  2  4 NA NA NA  6  3  3  1\n [673]  4  4  2  1 NA  1  6 NA  3  3  2  1  1  6 NA  1  5  1 NA  2  6  2 NA  4\n [697]  1  3  1  2 NA  1  1  3  1  2  4  2  1  3  2  4  3  2  2  1  1  5  6  4\n [721]  2  2  2  2  4 NA  1  2  2  2  2  4  5 NA NA NA  4  3  3  3  2  4  2  4\n [745] NA NA NA NA  2  1 NA  2  4  3  2 NA  2  3  1  3  4 NA  1  2  1  2 NA  3\n [769]  1  2  1  2  1  2  1  2  2  2  2  1  1  3  3  1  3  4  3 NA NA  4  2  3\n [793]  2  1  3  2  4  2  2  3  1  2  4  3  3  4 NA  1  4  2  1  1  1  3  1  5\n [817]  2  2  4  2 NA  1  3  1  2 NA  1  2  1  2  1 NA  1  3  2  3  2 NA  2  1\n [841]  4  2 NA NA NA  2  4  2 NA NA  3  1 NA  5  5  2  2  2 NA  2  1  3  1  3\n [865]  2  4  2  4 NA  4  1  2  3  2  3  3  2  3  2  2  2  1  3  2  4  2 NA  3\n [889]  3  2  2 NA NA  3  2  1  2  4  1  1  1  1  4  3  2 NA  3  2 NA  1 NA  3\n [913]  2  1  1  1  2 NA  2  2  3  3  2 NA NA  4  5  2  2  2  1  2  3  1  3  3\n [937]  4  3 NA  1  1  1 NA  4  3  5  1  1  2 NA  2  2  2  2  5  2  2  3  1  2\n [961]  3 NA  1  2 NA NA  2 NA  3  1  1  2  5  3  5  1  1  4 NA  2  1  3  1  1\n [985]  2  4  3  3  3 NA  1  1  2  2  1  1  2  2 NA  2\n\nna_check &lt;-ifelse(is.na(na_example),1,0) #for sumation check NA and print as 1\n\nsum_na &lt;- sum(na_check) \nsum_na # total numbers of NA\n\n[1] 145\n\nwithout_na&lt;-ifelse(is.na(na_example),0,na_example) #turn the na values to 0\n\nupdated_num_na&lt;-sum(ifelse(is.na(without_na),0,1))\nupdated_num_na\n\n[1] 1000"
   }
 ]

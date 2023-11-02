@@ -2,9 +2,7 @@
 title: "Assignment 1"
 ---
 
-# Assignment 1
-
-My first assignment has two parts.
+My first assignment has three parts.
 
 ## (a)
 
@@ -12,57 +10,70 @@ My first assignment has two parts.
 
 ## (b)
 
-### Differences
-
 1.Indexing
 
-Indexing in Python starts from 0.
+-   Python
 
-```{python}
-x=(1:4)
-first_element=x[1] #output is 2 because first index is 0 we should use x[0] for first element of the list in python.
-```
+    Indexing in Python starts from 0.
 
-Indexing in R starts from 1.
+    ```{python}
+    x=list(range(1,4))
+    first_element=x[1]
+    #output is 2 because first index is 0 we should use x[0] for first element of the list in python.
+    print(first_element)
+    ```
 
-```{r}
-x <- c(1:4)
-x #give us the list
-first_element <- x[1]
-first_element #when we try it in python output is going to be 2 because indexing starts from 0.
-```
+-   R
 
-2.  Style
+    Indexing in R starts from 1.
 
-R use more simple programming language rather then python.
+    ```{r}
+    x <- c(1:4)
+    first_element <- x[1]
+    first_element #when we try it in python output is going to be 2 because indexing starts from 0.
+    ```
 
-```{r}
-y<-c(1,2,3,4,5)
-square<-y^2 #using square root of the defined element give us the square of elements on the list.
-square
-```
+2.Style
 
-```{python}
-y = [1,2,3,4,5]
-square = [x**2 for x in square] #we have to use for loop for calculate the square of the elements on the list. More complex than R.
-```
+-   R
 
-3.  Syntax for Conditional Statements
+    R use more simple programming language rather then python.
 
-Ifelse applies the condition to each element on the list without for loop.
+    ```{r}
+    y<-c(1,2,3,4,5)
+    square<-y^2 #using square root of the defined element give us the square of elements on the list.
+    square
+    ```
 
-```{r}
-t <- c(1,2,3,4,5,6)
-ifelse(t<4,t+1,0)
+-   Python
 
-```
+    ```{python}
+    y = [1,2,3,4,5]
+    sq = [y**2 for y in y] #we have to use for loop for calculate the square of the elements on the list. More complex than R.
+    ```
 
-In python, we need for loop to apply the condition to each element on the list.
+3.Syntax for Conditional Statements
 
-```{python}
-t = [1,2,3,4,5,6]
-new_list = [x + 1 if x < 4 else 0 for x in t]
-```
+-   R
+
+    Ifelse applies the condition to each element on the list without for loop.
+
+    ```{r}
+    t <- c(1,2,3,4,5,6)
+    ifelse(t<4,t+1,0)
+
+    ```
+
+-   Python
+
+    In python, we need for loop to apply the condition to each element on the list.
+
+    ```{python}
+    t = [1,2,3,4,5,6]
+    new_list = [x + 1 if x < 4 else 0 for x in t]
+    ```
+
+## (c)
 
 ```{r}
 
@@ -70,9 +81,17 @@ library(dslabs)
 
 data("na_example")
 
-print(na_example)
+print(na_example) #print na_example
+
+na_check <-ifelse(is.na(na_example),1,0) #for sumation check NA and print as 1
+
+sum_na <- sum(na_check) 
+sum_na # total numbers of NA
+
+without_na<-ifelse(is.na(na_example),0,na_example) #turn the na values to 0
+
+updated_num_na<-sum(ifelse(is.na(without_na),0,1))
+updated_num_na
 
 
 ```
-
-
