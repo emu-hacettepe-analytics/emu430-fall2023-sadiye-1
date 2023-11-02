@@ -9,19 +9,16 @@ My first assignment has three parts.
 [What is data wrangling? Intro, Motivation, Outline, Setup -- Pt. 1 Data Wrangling Introduction](https://www.youtube.com/watch?v=jOd65mR1zfw&list=PL9HYL-VRX0oTOK4cpbCbRk15K2roEgzVW&index=208)
 
 ### Summary
- 
--  Data scientists spend a significant portion of their time collecting and preparing data before analysis. 
 
--  R packages like tidyr and dplyr make data work more efficient.
+-   Data scientists spend a significant portion of their time collecting and preparing data before analysis.
 
--  Table structure allows you to work with large datasets more efficiently, only showing a portion of the data that fits in your console window.
+-   R packages like tidyr and dplyr make data work more efficient.
 
--  The "pipe operator" (%>%) is a handy way to connect data work steps.
+-   Table structure allows you to work with large datasets more efficiently, only showing a portion of the data that fits in your console window.
 
+-   The "pipe operator" (%\>%) is a handy way to connect data work steps.
 
--  You can learn to do things like selecting specific data, filtering, creating new info, and summarizing data using these tools.
-
-
+-   You can learn to do things like selecting specific data, filtering, creating new info, and summarizing data using these tools.
 
 ## (b)
 
@@ -64,10 +61,12 @@ My first assignment has three parts.
 
 -   Python
 
-    ```{python}
+    We have to use for loop for calculate the square of the elements on the list.
+
+    ```{{python}}
     y = [1,2,3,4,5]
     sq = [y**2 for y in y] 
-    #we have to use for loop for calculate the square of the elements on the list.
+
     ```
 
 3.Syntax for Conditional Statements
@@ -95,7 +94,8 @@ My first assignment has three parts.
 
 ```{r}
 
-#install.packages("dslabs") if you install the packages once there is no need to instaal each time just use for first time is enough.
+#install.packages("dslabs") 
+# if you install the packages once there is no need to instaal each time just use for first time is enough.
 
 library(dslabs)
 
