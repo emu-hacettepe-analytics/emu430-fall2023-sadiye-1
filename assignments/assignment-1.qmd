@@ -4,12 +4,75 @@ title: "Assignment 1"
 
 # Assignment 1
 
-```{r}
-1 + 1
-```
-
 My first assignment has two parts.
 
 ## (a)
 
+[Securely store and share database credentials across projects with Data Connections \| Posit Cloud](https://www.youtube.com/watch?v=HFvJsWiQYbA&list=PL9HYL-VRX0oTOK4cpbCbRk15K2roEgzVW&index=3)
+
 ## (b)
+
+### Differences
+
+1.Indexing
+
+Indexing in Python starts from 0.
+
+```{python}
+x=(1:4)
+first_element=x[1] #output is 2 because first index is 0 we should use x[0] for first element of the list in python.
+```
+
+Indexing in R starts from 1.
+
+```{r}
+x <- c(1:4)
+x #give us the list
+first_element <- x[1]
+first_element #when we try it in python output is going to be 2 because indexing starts from 0.
+```
+
+2.  Style
+
+R use more simple programming language rather then python.
+
+```{r}
+y<-c(1,2,3,4,5)
+square<-y^2 #using square root of the defined element give us the square of elements on the list.
+square
+```
+
+```{python}
+y = [1,2,3,4,5]
+square = [x**2 for x in square] #we have to use for loop for calculate the square of the elements on the list. More complex than R.
+```
+
+3.  Syntax for Conditional Statements
+
+Ifelse applies the condition to each element on the list without for loop.
+
+```{r}
+t <- c(1,2,3,4,5,6)
+ifelse(t<4,t+1,0)
+
+```
+
+In python, we need for loop to apply the condition to each element on the list.
+
+```{python}
+t = [1,2,3,4,5,6]
+new_list = [x + 1 if x < 4 else 0 for x in t]
+```
+
+```{r}
+
+library(dslabs)
+
+data("na_example")
+
+print(na_example)
+
+
+```
+
+
