@@ -2,7 +2,7 @@
 title: "About Me"
 sidebar: false 
 ---
-<a href="file:///C:/Users/sadiy/OneDrive/Masa%C3%BCst%C3%BC/Documents/CV,%C4%B0mza,Vesikal%C4%B1k/%C5%9Eadiye%20%C3%96zt%C3%BCrk%20CV.pdf">Download Brochure</a>
+<a href="file:///C:/Users/sadiy/OneDrive/Masa%C3%BCst%C3%BC/Documents/CV,%C4%B0mza,Vesikal%C4%B1k/%C5%9Eadiye%20%C3%96zt%C3%BCrk%20CV.pdf">Download CV (English)</a>
 
 
 # Education
