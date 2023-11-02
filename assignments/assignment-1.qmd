@@ -42,8 +42,9 @@ My first assignment has three parts.
     ```{r}
     x <- c(1:4)
     first_element <- x[1]
-    first_element 
     #when we try it in python output is going to be 2 because indexing starts from 0.
+    first_element 
+
     ```
 
 2.Style
