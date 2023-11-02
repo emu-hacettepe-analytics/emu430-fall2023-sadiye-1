@@ -45,7 +45,8 @@ My first assignment has three parts.
     ```{r}
     x <- c(1:4)
     first_element <- x[1]
-    first_element #when we try it in python output is going to be 2 because indexing starts from 0.
+    first_element 
+    #when we try it in python output is going to be 2 because indexing starts from 0.
     ```
 
 2.Style
@@ -56,7 +57,8 @@ My first assignment has three parts.
 
     ```{r}
     y<-c(1,2,3,4,5)
-    square<-y^2 #using square root of the defined element give us the square of elements on the list.
+    square<-y^2 
+    #using square root of the defined element give us the square of elements on the list.
     square
     ```
 
@@ -64,7 +66,8 @@ My first assignment has three parts.
 
     ```{python}
     y = [1,2,3,4,5]
-    sq = [y**2 for y in y] #we have to use for loop for calculate the square of the elements on the list. More complex than R.
+    sq = [y**2 for y in y] 
+    #we have to use for loop for calculate the square of the elements on the list.
     ```
 
 3.Syntax for Conditional Statements
