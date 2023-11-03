@@ -67,7 +67,7 @@
     "href": "assignments/assignment-1.html#a",
     "title": "Assignment 1",
     "section": "(a)",
-    "text": "(a)\nWhat is data wrangling? Intro, Motivation, Outline, Setup – Pt. 1 Data Wrangling Introduction\n\nSummary\n\nData scientists spend a significant portion of their time collecting and preparing data before analysis.\nR packages like tidyr and dplyr make data work more efficient.\nTable structure allows you to work with large datasets more efficiently, only showing a portion of the data that fits in your console window.\nThe “pipe operator” (%&gt;%) is a handy way to connect data work steps.\nYou can learn to do things like selecting specific data, filtering, creating new info, and summarizing data using these tools."
+    "text": "(a)\nWhat is data wrangling? Intro, Motivation, Outline, Setup – Pt. 1 Data Wrangling Introduction\n\nData scientists spend a significant portion of their time collecting and preparing data before analysis.\nR packages like tidyr and dplyr make data work more efficient.\nTable structure allows you to work with large datasets more efficiently, only showing a portion of the data that fits in your console window.\nThe “pipe operator” (%&gt;%) is a handy way to connect data work steps.\nYou can learn to do things like selecting specific data, filtering, creating new info, and summarizing data using these tools."
   },
   {
     "objectID": "assignments/assignment-1.html#b",

@@ -8,8 +8,6 @@ My first assignment has three parts.
 
 [What is data wrangling? Intro, Motivation, Outline, Setup -- Pt. 1 Data Wrangling Introduction](https://www.youtube.com/watch?v=jOd65mR1zfw&list=PL9HYL-VRX0oTOK4cpbCbRk15K2roEgzVW&index=208)
 
-### Summary
-
 -   Data scientists spend a significant portion of their time collecting and preparing data before analysis.
 
 -   R packages like tidyr and dplyr make data work more efficient.
