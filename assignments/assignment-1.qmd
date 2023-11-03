@@ -113,7 +113,7 @@ sum_na # total numbers of NA
 
 without_na<-ifelse(is.na(na_example),0,na_example) #turn the na values to 0
 
-updated_num_na<-sum(ifelse(is.na(without_na),0,1))
+updated_num_na<-sum(ifelse(is.na(without_na),1,0))
 updated_num_na
 
 
