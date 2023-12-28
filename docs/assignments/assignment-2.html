@@ -331,7 +331,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>minutes<span class="ot">&lt;-</span><span class="fu">ifelse</span>(<span class="fu">grepl</span>(<span class="st">"m"</span>,minutes),<span class="fu">gsub</span>(<span class="st">"m"</span>, <span class="st">""</span>, minutes),minutes)</span>
 <span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>minutes <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(minutes)</span>
 <span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>duration_min <span class="ot">&lt;-</span><span class="fu">ifelse</span>(<span class="fu">is.na</span>(hours),minutes,<span class="dv">60</span><span class="sc">*</span>hours<span class="sc">+</span>minutes)</span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>duration_min <span class="ot">&lt;-</span><span class="dv">60</span><span class="sc">*</span>hours<span class="sc">+</span>minutes</span>
 <span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>imdb_data_frame <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Title=</span>titles,<span class="at">Year=</span>year,<span class="at">Duration=</span>durations, <span class="at">Rating=</span>rating, <span class="at">Votes=</span>votes, <span class="at">DurationMin =</span> duration_min)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -347,7 +347,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>imdb_data_frame[top_5[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>],]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                           Title Year Duration Rating Votes DurationMin
-457               Hababam Sinifi 1975   1h 27m    9.2 42512          87
+457               Hababam Sinifi 1975   1h 27m    9.2 42513          87
 202       CM101MMXI Fundamentals 2013   2h 19m    9.1 46995         139
 446                   Tosun Pasa 1976   1h 30m    8.9 24327          90
 453 Hababam Sinifi Sinifta Kaldi 1975   1h 35m    8.9 24370          95
@@ -358,10 +358,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>imdb_data_frame[bottom_5[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>],]   </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                             Title Year Duration Rating Votes DurationMin
-100 Cumali Ceber: Allah Seni Alsin 2017   1h 40m    1.0 39266         100
-110                           Reis 2017   1h 48m    1.0 73972         108
+100 Cumali Ceber: Allah Seni Alsin 2017   1h 40m    1.0 39267         100
+110                           Reis 2017   1h 48m    1.0 73973         108
 21                           Müjde 2022      48m    1.2  9920          48
-28               15/07 Safak Vakti 2021   1h 35m    1.2 20606          95
+28               15/07 Safak Vakti 2021   1h 35m    1.2 20607          95
 75                  Cumali Ceber 2 2018   1h 40m    1.2 10228         100</code></pre>
 </div>
 </div>
@@ -391,7 +391,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(yearly_avg_ratings, <span class="fu">aes</span>(<span class="at">x =</span> avg_rating, <span class="at">y =</span> Year)) <span class="sc">+</span></span>
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Yearly Average Ratings of Turkish Movies"</span>, <span class="at">x =</span> <span class="st">"Year"</span>, <span class="at">y =</span> <span class="st">"Average Rating"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Yearly Average Ratings of Turkish Movies"</span>, <span class="at">x =</span> <span class="st">"Average Rating"</span>, <span class="at">y =</span> <span class="st">"Year"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="assignment-2_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
 </div>
@@ -400,9 +400,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">count =</span> <span class="fu">n</span>())</span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(movie_counts, <span class="fu">aes</span>(<span class="at">x =</span> count, <span class="at">y =</span> Year)) <span class="sc">+</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(movie_counts, <span class="fu">aes</span>(<span class="at">x =</span> count, <span class="at">y =</span> <span class="fu">factor</span>(Year))) <span class="sc">+</span></span>
 <span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">fill =</span> <span class="st">"skyblue"</span>) <span class="sc">+</span></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Number of Movies Over the Years"</span>, <span class="at">x =</span> <span class="st">"Year"</span>, <span class="at">y =</span> <span class="st">"Number of Movies"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Number of Movies Over the Years"</span>, <span class="at">x =</span> <span class="st">"Number of Movies"</span>, <span class="at">y =</span> <span class="st">"Year"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="assignment-2_files/figure-html/unnamed-chunk-5-2.png" class="img-fluid" width="672"></p>
 </div>
@@ -414,7 +414,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>correlation_1 <span class="ot">&lt;-</span> <span class="fu">cor</span>(imdb_data_frame<span class="sc">$</span>Votes, imdb_data_frame<span class="sc">$</span>Rating)</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>correlation_1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.1307539</code></pre>
+<pre><code>[1] 0.1307548</code></pre>
 </div>
 </div>
 <p>As can be seen, the correlation is very close to 0. There is no linear relationship between two variables.</p>
@@ -477,16 +477,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>merged_data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                       Title Year Duration Rating Votes DurationMin
-1   Yedinci Kogustaki Mucize 2019   2h 12m    8.2 54155         132
+1   Yedinci Kogustaki Mucize 2019   2h 12m    8.2 54156         132
 2                 Kis Uykusu 2014   3h 16m    8.0 54633         196
-3      Nefes: Vatan Sagolsun 2009    2h 8m    8.0 35018         128
+3      Nefes: Vatan Sagolsun 2009    2h 8m    8.0 35019         128
 4  Ayla: The Daughter of War 2017    2h 5m    8.3 42990         125
-5             Babam ve Oglum 2005   1h 48m    8.2 91024         108
-6                Ahlat Agaci 2018    3h 8m    8.0 27002         188
-7    Bir Zamanlar Anadolu'da 2011   2h 37m    7.8 49352         157
-8                     Eskiya 1996    2h 8m    8.1 71698         128
+5             Babam ve Oglum 2005   1h 48m    8.2 91026         108
+6                Ahlat Agaci 2018    3h 8m    8.0 27003         188
+7    Bir Zamanlar Anadolu'da 2011   2h 37m    7.8 49354         157
+8                     Eskiya 1996    2h 8m    8.1 71699         128
 9                   G.O.R.A. 2004    2h 7m    8.0 66029         127
-10                 Vizontele 2001   1h 50m    8.0 38399         110
+10                 Vizontele 2001   1h 50m    8.0 38400         110
 11  Her Sey Çok Güzel Olacak 1998   1h 47m    8.1 27119         107</code></pre>
 </div>
 </div>
@@ -500,7 +500,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>top_11</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                           Title Year Duration Rating Votes DurationMin
-457               Hababam Sinifi 1975   1h 27m    9.2 42512          87
+457               Hababam Sinifi 1975   1h 27m    9.2 42513          87
 202       CM101MMXI Fundamentals 2013   2h 19m    9.1 46995         139
 446                   Tosun Pasa 1976   1h 30m    8.9 24327          90
 453 Hababam Sinifi Sinifta Kaldi 1975   1h 35m    8.9 24370          95
