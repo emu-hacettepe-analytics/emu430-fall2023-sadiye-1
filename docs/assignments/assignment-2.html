@@ -203,8 +203,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#assignment-2" id="toc-assignment-2" class="nav-link active" data-scroll-target="#assignment-2">Assignment 2</a>
-  <ul class="collapse">
+  <li><a href="#hello" id="toc-hello" class="nav-link active" data-scroll-target="#hello">Hello!</a></li>
   <li><a href="#importing-data-to-rstudio" id="toc-importing-data-to-rstudio" class="nav-link" data-scroll-target="#importing-data-to-rstudio">1. Importing Data to RStudio</a></li>
   <li><a href="#start-web-scrapping-to-create-a-data-frame-with-columns-title-year-durationrating-votes" id="toc-start-web-scrapping-to-create-a-data-frame-with-columns-title-year-durationrating-votes" class="nav-link" data-scroll-target="#start-web-scrapping-to-create-a-data-frame-with-columns-title-year-durationrating-votes">2. Start web scrapping to create a Data Frame with columns: Title, Year, Duration,Rating, Votes</a></li>
   <li><a href="#exploratory-data-analysis" id="toc-exploratory-data-analysis" class="nav-link" data-scroll-target="#exploratory-data-analysis">3. Exploratory Data Analysis</a>
@@ -216,7 +215,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#e-correlation-between-duration-and-ratings" id="toc-e-correlation-between-duration-and-ratings" class="nav-link" data-scroll-target="#e-correlation-between-duration-and-ratings">e) Correlation Between Duration and Ratings</a></li>
   </ul></li>
   <li><a href="#imdb-top-1000" id="toc-imdb-top-1000" class="nav-link" data-scroll-target="#imdb-top-1000">4. IMDb Top 1000</a></li>
-  </ul></li>
   </ul>
 </nav>
 </nav>
@@ -244,10 +242,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="assignment-2" class="level1">
-<h1>Assignment 2</h1>
-<p>Hello!</p>
+<section id="hello" class="level2">
+<h2 class="anchored" data-anchor-id="hello">Hello!</h2>
 <p>If you are not Erdi Dasdemir and you are here, you are probably looking for information about the assignmenr. I would be happy if you could send me your suggestions for my homework. If you need help, you can reach me via Slack. I would be happy if you use my assignment as a helpful reference.</p>
+</section>
 <section id="importing-data-to-rstudio" class="level2">
 <h2 class="anchored" data-anchor-id="importing-data-to-rstudio">1. Importing Data to RStudio</h2>
 <div class="cell">
@@ -372,9 +370,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="b-my-favorite-movies" class="level3">
 <h3 class="anchored" data-anchor-id="b-my-favorite-movies">b) My favorite movies</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>my_fav_movies <span class="ot">&lt;-</span> imdb_data_frame[<span class="fu">grepl</span>(<span class="st">"Dedemin Insanlari"</span>, <span class="at">ignore.case =</span> <span class="cn">TRUE</span>, imdb_data_frame<span class="sc">$</span>Title) <span class="sc">|</span><span class="fu">grepl</span>(<span class="st">"Ayla"</span>, <span class="at">ignore.case =</span> <span class="cn">TRUE</span>, imdb_data_frame<span class="sc">$</span>Title), ]</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>my_fav_movies</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>my_fav_movies <span class="ot">&lt;-</span> imdb_data_frame[<span class="fu">grepl</span>(<span class="st">"Dedemin Insanlari"</span>, <span class="at">ignore.case =</span> <span class="cn">TRUE</span>, imdb_data_frame<span class="sc">$</span>Title) <span class="sc">|</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>                                   <span class="fu">grepl</span>(<span class="st">"Ayla"</span>, <span class="at">ignore.case =</span> <span class="cn">TRUE</span>, imdb_data_frame<span class="sc">$</span>Title), ]</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>my_fav_movies</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                        Title Year Duration Rating Votes DurationMin
 99  Ayla: The Daughter of War 2017    2h 5m    8.3 42990         125
@@ -519,7 +518,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 
 
-</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
