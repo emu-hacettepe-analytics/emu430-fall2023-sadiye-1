@@ -2,9 +2,7 @@
 title: "Assignment 2"
 ---
 
-# Assignment 2
-
-Hello!
+## Hello!
 
 If you are not Erdi Dasdemir and you are here, you are probably looking for information about the assignmenr. I would be happy if you could send me your suggestions for my homework. If you need help, you can reach me via Slack. I would be happy if you use my assignment as a helpful reference.
 
@@ -123,7 +121,8 @@ For the last 5, I would like it to be in the Recep Ivedik series, even though th
 ### b) My favorite movies
 
 ```{r}
-my_fav_movies <- imdb_data_frame[grepl("Dedemin Insanlari", ignore.case = TRUE, imdb_data_frame$Title) |grepl("Ayla", ignore.case = TRUE, imdb_data_frame$Title), ]
+my_fav_movies <- imdb_data_frame[grepl("Dedemin Insanlari", ignore.case = TRUE, imdb_data_frame$Title) |
+                                   grepl("Ayla", ignore.case = TRUE, imdb_data_frame$Title), ]
 
 my_fav_movies
 ```
