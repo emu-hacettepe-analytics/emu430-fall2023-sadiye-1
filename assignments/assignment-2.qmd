@@ -92,7 +92,7 @@ minutes<-ifelse(grepl("h", minutes),0,minutes)
 minutes<-ifelse(grepl("m",minutes),gsub("m", "", minutes),minutes)
 minutes <- as.numeric(minutes)
 
-duration_min <-ifelse(is.na(hours),minutes,60*hours+minutes)
+duration_min <-60*hours+minutes
 
 imdb_data_frame <- data.frame(Title=titles,Year=year,Duration=durations, Rating=rating, Votes=votes, DurationMin = duration_min)
 
@@ -138,16 +138,16 @@ yearly_avg_ratings <- imdb_data_frame %>%
 
 ggplot(yearly_avg_ratings, aes(x = avg_rating, y = Year)) +
   geom_point() +
-  labs(title = "Yearly Average Ratings of Turkish Movies", x = "Year", y = "Average Rating")
+  labs(title = "Yearly Average Ratings of Turkish Movies", x = "Average Rating", y = "Year")
 
 movie_counts <- imdb_data_frame %>%
   group_by(Year) %>%
   summarise(count = n())
 
 
-ggplot(movie_counts, aes(x = count, y = Year)) +
+ggplot(movie_counts, aes(x = count, y = factor(Year))) +
   geom_bar(stat = "identity", fill = "skyblue") +
-  labs(title = "Number of Movies Over the Years", x = "Year", y = "Number of Movies")
+  labs(title = "Number of Movies Over the Years", x = "Number of Movies", y = "Year")
 
 ```
 

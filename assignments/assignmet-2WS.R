@@ -78,7 +78,7 @@ minutes<-ifelse(grepl("h", minutes),0,minutes)
 minutes<-ifelse(grepl("m",minutes),gsub("m", "", minutes),minutes)
 minutes <- as.numeric(minutes)
 
-duration_min <-ifelse(is.na(hours),minutes,60*hours+minutes)
+duration_min <-60*hours+minutes
 
 imdb_data_frame <- data.frame(Title=titles,Year=year,Duration=durations, Rating=rating, Votes=votes, DurationMin = duration_min)
 
