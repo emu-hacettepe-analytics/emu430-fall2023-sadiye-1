@@ -136,18 +136,20 @@ yearly_avg_ratings <- imdb_data_frame %>%
   group_by(Year) %>%
   summarize(avg_rating = mean(Rating))
 
-ggplot(yearly_avg_ratings, aes(x = avg_rating, y = Year)) +
+ggplot(yearly_avg_ratings, aes(x = Year, y = avg_rating)) +
   geom_point() +
-  labs(title = "Yearly Average Ratings of Turkish Movies", x = "Average Rating", y = "Year")
+  labs(title = "Yearly Average Ratings of Turkish Movies", x = "Year", y = "Average Rating") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))  
 
 movie_counts <- imdb_data_frame %>%
   group_by(Year) %>%
   summarise(count = n())
 
 
-ggplot(movie_counts, aes(x = count, y = factor(Year))) +
-  geom_bar(stat = "identity", fill = "skyblue") +
-  labs(title = "Number of Movies Over the Years", x = "Number of Movies", y = "Year")
+ggplot(imdb_data_frame, aes(x =factor(Year) , y = Rating)) +
+  geom_boxplot(fill = "skyblue") +
+  labs(title = "Distribution of Ratings Over the Years", x = "Year", y = "Rating")+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))  
 
 ```
 
