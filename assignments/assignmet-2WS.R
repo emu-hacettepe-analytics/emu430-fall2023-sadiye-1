@@ -71,6 +71,8 @@ votes <- c(numeric_vote_1,numeric_vote_2)
 
 hours <- ifelse(is.na(as.numeric(sub("h.*", "",durations))),0,as.numeric(sub("h.*", "",durations)))
 
+
+
 minutes <- sub(".*\\s(\\d+)m", "\\1", durations)
 minutes<-ifelse(grepl("h", minutes),0,minutes) 
 minutes<-ifelse(grepl("m",minutes),gsub("m", "", minutes),minutes)

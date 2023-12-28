@@ -87,7 +87,7 @@ numeric_vote_2 <- as.numeric(gsub(",", "", cleaned_vote_2))
 
 votes <- c(numeric_vote_1,numeric_vote_2)
 
-hours <- ifelse(is.na(as.numeric(sub("h.*", "",durations))),0,as.numeric(sub("h.*", "",durations)))
+suppressWarnings(hours <- ifelse(is.na(as.numeric(sub("h.*", "",durations))),0,as.numeric(sub("h.*", "",durations))))
 
 minutes <- sub(".*\\s(\\d+)m", "\\1", durations)
 minutes<-ifelse(grepl("h", minutes),0,minutes) 
@@ -97,7 +97,7 @@ minutes <- as.numeric(minutes)
 duration_min <-ifelse(is.na(hours),minutes,60*hours+minutes)
 
 imdb_data_frame <- data.frame(Title=titles,Year=year,Duration=durations, Rating=rating, Votes=votes, DurationMin = duration_min)
-imdb_data_frame
+
 
 ```
 
