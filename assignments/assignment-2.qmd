@@ -171,7 +171,7 @@ correlation_2
 
 As can be seen, this means that the correlation is closer to 0 than the previous result. There is no linear relationship between two variables.
 
-## 4) IMDb Top 1000
+## 4. IMDb Top 1000
 
 ```{r}
 url_3 <- "https://m.imdb.com/search/title/?title_type=feature&groups=top_1000&country_of_origin=TR"
