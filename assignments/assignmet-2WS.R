@@ -1,16 +1,4 @@
----
-title: "Assignment 2"
----
 
-# Assignment 2
-
-Hello!
-
-If you are not Erdi Dasdemir and you are here, you are probably looking for information about the assignmenr. I would be happy if you could send me your suggestions for my homework. If you need help, you can reach me via Slack. I would be happy if you use my assignment as a helpful reference.
-
-## 1. Importing Data to RStudio
-
-```{r}
 library(tidyverse) # for everything :)
 library(rvest) # for HTML scraping
 library(stringr) # for string processing
@@ -20,13 +8,7 @@ url_2 <- "https://m.imdb.com/search/title/?title_type=feature&release_date=,2010
 
 data_html_1 <- read_html(url_1)
 data_html_2 <- read_html(url_2)
-```
 
-Firstly,I called the libraries I needed by typing them at the beginning of my code. Then, I import data to R. Since I could not pull all the data at once, I divided the data into two according to dates.
-
-## 2. Start web scrapping to create a Data Frame with columns: Title, Year, Duration,Rating, Votes
-
-```{r}
 title_names_1 <-html_nodes(data_html_1,'.ipc-title__text')
 title_names_1 <- html_text(title_names_1)
 title_names_1 <- tail(head(title_names_1,-1),-1)
@@ -99,47 +81,26 @@ duration_min <-ifelse(is.na(hours),minutes,60*hours+minutes)
 imdb_data_frame <- data.frame(Title=titles,Year=year,Duration=durations, Rating=rating, Votes=votes, DurationMin = duration_min)
 
 imdb_data_frame
-```
 
-To create a data frame, I separated and combined the headers from each of the URLs I took separately and finally created a data frame by combining all the headers.
-
-## 3. Exploratory Data Analysis
-
-### a) The 5 best and worst movies according to rating
-
-```{r}
 index <- order(imdb_data_frame$Rating,decreasing = TRUE )
 top_5 <- head(index,5)
 imdb_data_frame[top_5[1:5],]
 
 index_1 <- order(imdb_data_frame$Rating)
 bottom_5 <- head(index_1,5)
-imdb_data_frame[bottom_5[1:5],]   
+imdb_data_frame[bottom_5[1:5],]     
 
-```
+my_fav_movies <- imdb_data_frame[grepl("Dedemin Insanlari", ignore.case = TRUE, imdb_data_frame$Title) |
+                                                     grepl("Ayla", ignore.case = TRUE, imdb_data_frame$Title), ]
 
-For the last 5, I would like it to be in the Recep Ivedik series, even though the whole of Turkey does not agree with me, but this last five is quite bad and appropriate. For the top 5, Cem Yılmaz is not a comedian I like very much, but CM101 was good, other than that, it's a nostalgic 5. I think the average age of those who voted is high, and I also think that the actors got such high ratings because of their respectability. Both lists seem appropriate for me.
 
-### b) My favorite movies
-
-```{r}
-my_fav_movies <- imdb_data_frame[grepl("Dedemin Insanlari", ignore.case = TRUE, imdb_data_frame$Title) |grepl("Ayla", ignore.case = TRUE, imdb_data_frame$Title), ]
-
-my_fav_movies
-```
-
-"Dedemin İnsanları" is a very special movie for me and I think it did not get the rating it deserved. Since I cannot be objective on this issue, I may interpret it this way. Ayla is one of the best Turkish movies I have watched and its rating is neither more nor less.
-
-### c) Average ratings of Turkish movies
-
-```{r}
 yearly_avg_ratings <- imdb_data_frame %>%
   group_by(Year) %>%
   summarize(avg_rating = mean(Rating))
 
 ggplot(yearly_avg_ratings, aes(x = avg_rating, y = Year)) +
   geom_point() +
-  labs(title = "Yearly Average Ratings of Turkish Movies", x = "Year", y = "Average Rating")
+  labs(title = "Yearly Average Ratings of Turkish Movies", x ="Average Rating" , y = "Year")
 
 movie_counts <- imdb_data_frame %>%
   group_by(Year) %>%
@@ -148,32 +109,13 @@ movie_counts <- imdb_data_frame %>%
 
 ggplot(movie_counts, aes(x = count, y = Year)) +
   geom_bar(stat = "identity", fill = "skyblue") +
-  labs(title = "Number of Movies Over the Years", x = "Year", y = "Number of Movies")
+  labs(title = "Number of Movies Over the Years", x = "Number of Movies", y = "Year" )
 
-```
+correlation <- cor(imdb_data_frame$Votes, imdb_data_frame$Rating)
 
-### d) Correlation Between Votes and Ratings
+                            
 
-```{r}
-correlation_1 <- cor(imdb_data_frame$Votes, imdb_data_frame$Rating)
-correlation_1
-```
 
-As can be seen, the correlation is very close to 0. There is no linear relationship between two variables.
-
-### e) Correlation Between Duration and Ratings
-
-```{r}
-correlation_2 <- cor(imdb_data_frame$DurationMin, imdb_data_frame$Rating)
-correlation_2
-
-```
-
-As can be seen, this means that the correlation is closer to 0 than the previous result. There is no linear relationship between two variables.
-
-## 4) IMDb Top 1000
-
-```{r}
 url_3 <- "https://m.imdb.com/search/title/?title_type=feature&groups=top_1000&country_of_origin=TR"
 
 data_html_3 <- read_html(url_3)
@@ -186,32 +128,17 @@ title_names_3 <- unlist(lapply(title_names_3, function(x) {x[2]}))
 
 year_3 <- html_elements(data_html_3,'.dli-title-metadata > span:nth-child(1)')
 year_3 <- html_text(year_3)
-year_3 <- as.factor(year_3)
+year_3 <- as.numeric(year_3)
 
 
 imdb_data_frame_top1000 <- data.frame(Title=title_names_3,Year=year_3)
-
 imdb_data_frame_top1000
 
-```
 
--   Join the data frames
-
-```{r}
-imdb_data_frame_top1000$Year <- as.numeric(as.character(imdb_data_frame_top1000$Year)) #Since my code gave an error, I asked chatgpt about the error and she offered such a solution.
-
-merged_data <- left_join(imdb_data_frame_top1000,imdb_data_frame, by = c("Title", "Year"))
-merged_data
-
-```
-
--   The top 11 movies from first data frame based on their rank
-
-```{r}
 index_2 <- order(imdb_data_frame$Rating,decreasing = TRUE )
 top_11 <- head(index_2,11)
 top_11 <- imdb_data_frame[top_11[1:11],]
-top_11
-```
 
--   It's really strange that there isn't even a single movie matching the IMDb top 1000 in the first data frame. I did research on this subject and IMDb does not provide an explanation as to how it determines the top 1000. I cannot say that I achieved much by analyzing the data. I think this is related to the up-to-dateness of the data, although I cannot base it on any concrete evidence.
+merged_data <- left_join(imdb_data_frame_top1000,imdb_data_frame, by = c("Title", "Year"))
+
+order(imdb_data_frame_top1000)
