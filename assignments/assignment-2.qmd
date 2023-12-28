@@ -153,6 +153,8 @@ ggplot(imdb_data_frame, aes(x =factor(Year) , y = Rating)) +
 
 ```
 
+Although movies have increased over the years, their ratings have gradually decreased. I attribute this to the fact that all YouTubers in recent years have been making movies and movies that have no artistic quality and are made only for money purposes.
+
 ### d) Correlation Between Votes and Ratings
 
 ```{r}
