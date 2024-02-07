@@ -194,18 +194,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="cleaning-data-in-r">CLEANING DATA IN R</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dslabs)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(murders)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(murders) <span class="co">#gives the first 6 row from data set</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>       state abb region population total
-1    Alabama  AL  South    4779736   135
-2     Alaska  AK   West     710231    19
-3    Arizona  AZ   West    6392017   232
-4   Arkansas  AR  South    2915918    93
-5 California  CA   West   37253956  1257
-6   Colorado  CO   West    5029196    65</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>
 Attaching package: 'dplyr'</code></pre>
@@ -219,6 +208,19 @@ Attaching package: 'dplyr'</code></pre>
 <pre><code>The following objects are masked from 'package:base':
 
     intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr) <span class="co">#necessary packages</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(murders)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(murders) <span class="co">#gives the first 6 row from data set</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       state abb region population total
+1    Alabama  AL  South    4779736   135
+2     Alaska  AK   West     710231    19
+3    Arizona  AZ   West    6392017   232
+4   Arkansas  AR  South    2915918    93
+5 California  CA   West   37253956  1257
+6   Colorado  CO   West    5029196    65</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(murders) <span class="co">#glimpsing of the data set</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -243,9 +245,8 @@ $ total      &lt;dbl&gt; 135, 19, 232, 93, 1257, 65, 97, 38, 99, 669, 376, 7, 12
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] TRUE</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>revenue_trimmed <span class="ot">=</span> <span class="fu">str_remove</span>(murders<span class="sc">$</span>abb, <span class="st">"A"</span>) <span class="co">#if we would like to remove a chr from a string we can use str_remove func.</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>revenue_trimmed</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>revenue_trimmed <span class="ot">=</span> <span class="fu">str_remove</span>(murders<span class="sc">$</span>abb, <span class="st">"A"</span>) <span class="co">#if we would like to remove a chr from a string we can use str_remove func.</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>revenue_trimmed</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> [1] "L"  "K"  "Z"  "R"  "C"  "CO" "CT" "DE" "DC" "FL" "G"  "HI" "ID" "IL" "IN"
 [16] "I"  "KS" "KY" "L"  "ME" "MD" "M"  "MI" "MN" "MS" "MO" "MT" "NE" "NV" "NH"
