@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -192,83 +158,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="cleaning-data-in-r" class="level3">
 <h3 class="anchored" data-anchor-id="cleaning-data-in-r">CLEANING DATA IN R</h3>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dslabs)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'dplyr'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:stats':
-
-    filter, lag</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:base':
-
-    intersect, setdiff, setequal, union</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr) <span class="co">#necessary packages</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(murders)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(murders) <span class="co">#gives the first 6 row from data set</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>       state abb region population total
-1    Alabama  AL  South    4779736   135
-2     Alaska  AK   West     710231    19
-3    Arizona  AZ   West    6392017   232
-4   Arkansas  AR  South    2915918    93
-5 California  CA   West   37253956  1257
-6   Colorado  CO   West    5029196    65</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(murders) <span class="co">#glimpsing of the data set</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Rows: 51
-Columns: 5
-$ state      &lt;chr&gt; "Alabama", "Alaska", "Arizona", "Arkansas", "California", "…
-$ abb        &lt;chr&gt; "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL",…
-$ region     &lt;fct&gt; South, West, West, South, West, West, Northeast, South, Sou…
-$ population &lt;dbl&gt; 4779736, 710231, 6392017, 2915918, 37253956, 5029196, 35740…
-$ total      &lt;dbl&gt; 135, 19, 232, 93, 1257, 65, 97, 38, 99, 669, 376, 7, 12, 36…</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(murders) <span class="co">#structure of the data set</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>'data.frame':   51 obs. of  5 variables:
- $ state     : chr  "Alabama" "Alaska" "Arizona" "Arkansas" ...
- $ abb       : chr  "AL" "AK" "AZ" "AR" ...
- $ region    : Factor w/ 4 levels "Northeast","South",..: 2 4 4 2 4 4 1 2 2 2 ...
- $ population: num  4779736 710231 6392017 2915918 37253956 ...
- $ total     : num  135 19 232 93 1257 ...</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.numeric</span>(murders<span class="sc">$</span>population)<span class="co">#if we use assert_is_numeric(murders$state) the output would be"murders$state is not class 'numeric'; it has class chr. (You should install required packages for use assert_is_ functions.)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] TRUE</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>revenue_trimmed <span class="ot">=</span> <span class="fu">str_remove</span>(murders<span class="sc">$</span>abb, <span class="st">"A"</span>) <span class="co">#if we would like to remove a chr from a string we can use str_remove func.</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>revenue_trimmed</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code> [1] "L"  "K"  "Z"  "R"  "C"  "CO" "CT" "DE" "DC" "FL" "G"  "HI" "ID" "IL" "IN"
-[16] "I"  "KS" "KY" "L"  "ME" "MD" "M"  "MI" "MN" "MS" "MO" "MT" "NE" "NV" "NH"
-[31] "NJ" "NM" "NY" "NC" "ND" "OH" "OK" "OR" "P"  "RI" "SC" "SD" "TN" "TX" "UT"
-[46] "VT" "V"  "W"  "WV" "WI" "WY"</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(murders <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">new_column =</span> revenue_trimmed)) <span class="co">#add a new column to a data frame</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>       state abb region population total new_column
-1    Alabama  AL  South    4779736   135          L
-2     Alaska  AK   West     710231    19          K
-3    Arizona  AZ   West    6392017   232          Z
-4   Arkansas  AR  South    2915918    93          R
-5 California  CA   West   37253956  1257          C
-6   Colorado  CO   West    5029196    65         CO</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(murders<span class="sc">$</span>population) <span class="co">#calculate min, 1st Qu, median, mean, 3rd Qu and max values for the variable.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
-  563626  1696962  4339367  6075769  6636084 37253956 </code></pre>
-</div>
-</div>
 
 
 </section>

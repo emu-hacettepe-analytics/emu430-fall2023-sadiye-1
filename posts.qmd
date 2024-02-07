@@ -5,7 +5,9 @@ sidebar: false
 
 ### CLEANING DATA IN R
 
-```{r}
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+
 library(dslabs)
 library(dplyr)
 library(stringr) #necessary packages
