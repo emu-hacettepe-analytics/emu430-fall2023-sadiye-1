@@ -5,14 +5,12 @@ sidebar: false
 
 ### CLEANING DATA IN R
 
-```{r setup, include=FALSE} 
-knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
-
+```{r} 
 library(dslabs)
-library(dplyr)
+suppressMessages(library(dplyr))
 library(stringr) #necessary packages
 
-data(murders)
+data(murders) #get data from dslabs
 head(murders) #gives the first 6 row from data set
 
 
