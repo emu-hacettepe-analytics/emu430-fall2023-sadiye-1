@@ -11,7 +11,7 @@ website:
         href: index.qmd
       - text: About Me
         href: about.qmd 
-      - text: My Posts
+      - text: My Data Course Notes
         href: posts.qmd
       - text: "EMU430 Coursework"
         menu:

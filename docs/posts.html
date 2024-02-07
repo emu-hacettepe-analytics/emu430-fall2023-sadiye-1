@@ -127,7 +127,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./posts.html" rel="" target="" aria-current="page">
- <span class="menu-text">My Posts</span></a>
+ <span class="menu-text">My Data Course Notes</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-emu430-coursework" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
@@ -239,15 +239,13 @@ $ total      &lt;dbl&gt; 135, 19, 232, 93, 1257, 65, 97, 38, 99, 669, 376, 7, 12
  $ population: num  4779736 710231 6392017 2915918 37253956 ...
  $ total     : num  135 19 232 93 1257 ...</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.numeric</span>(murders<span class="sc">$</span>population)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.numeric</span>(murders<span class="sc">$</span>population)<span class="co">#if we use assert_is_numeric(murders$state) the output would be"murders$state is not class 'numeric'; it has class chr. (You should install required packages for use assert_is_ functions.)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] TRUE</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#if we use assert_is_numeric(murders$state) the output would be "murders$state is not class 'numeric'; it has class chr. (You should install required packages for use assert_is_ functions.)</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>revenue_trimmed <span class="ot">=</span> <span class="fu">str_remove</span>(murders<span class="sc">$</span>abb, <span class="st">"A"</span>) <span class="co">#if we would like to remove a chr from a string we can use str_remove func.</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>revenue_trimmed</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>revenue_trimmed <span class="ot">=</span> <span class="fu">str_remove</span>(murders<span class="sc">$</span>abb, <span class="st">"A"</span>) <span class="co">#if we would like to remove a chr from a string we can use str_remove func.</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>revenue_trimmed</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> [1] "L"  "K"  "Z"  "R"  "C"  "CO" "CT" "DE" "DC" "FL" "G"  "HI" "ID" "IL" "IN"
 [16] "I"  "KS" "KY" "L"  "ME" "MD" "M"  "MI" "MN" "MS" "MO" "MT" "NE" "NV" "NH"

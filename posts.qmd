@@ -14,8 +14,7 @@ library(dplyr)
 glimpse(murders) #glimpsing of the data set
 str(murders) #structure of the data set
 
-is.numeric(murders$population)
-#if we use assert_is_numeric(murders$state) the output would be "murders$state is not class 'numeric'; it has class chr. (You should install required packages for use assert_is_ functions.)
+is.numeric(murders$population)#if we use assert_is_numeric(murders$state) the output would be"murders$state is not class 'numeric'; it has class chr. (You should install required packages for use assert_is_ functions.)
 
 library(stringr)
 revenue_trimmed = str_remove(murders$abb, "A") #if we would like to remove a chr from a string we can use str_remove func.
